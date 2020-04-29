@@ -1,0 +1,175 @@
+@import "./reset.css";
+@import "/styles/colors.css";
+@import "./typography.css";
+@import "./flickity_carousel.css";
+
+.row {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+img {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.hero-bg {
+  background-image: url(../src/img/photo/group-1@2x.png);
+  background-repeat: no-repeat;
+  background-color:white;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.hero-padding {
+	padding-top: 2.2rem;
+}
+
+.navbar ul {
+	list-style-type: none;
+	margin-top: -3.2rem;
+	padding: 0;
+}
+
+.navbar li {
+	display: inline;
+	padding: 0px 0.7rem;
+}
+
+.hero-logo {
+	background-color: white;
+	height: 7.5rem;
+	padding: 0.7rem;
+	margin-top: -0.3rem;
+}
+
+.slider-text {
+	padding-top: 4.5rem;
+	padding-bottom: 12rem;
+}
+
+.hero-stripes {
+	width: 1.7rem;
+	margin-bottom: -3rem;
+}
+
+.hero .btn {
+	background-color: #09aeda;
+	margin-top: 2.15rem;
+	border-radius: 0;
+}
+
+.hero .autograph {
+	width: 5.75rem;
+}
+
+
+/* WELCOME segment */
+.welcome {
+	background-image: url(../src/img/graph_elem/bg-grid-element@2x.png);
+	background-repeat: no-repeat;
+	background-color:white;
+  	background-size: contain;
+  	max-width: 85%;
+  	height: 100%;
+}
+
+@media (min-width: 992px) {
+  .cropping-img {
+		border: 0.6rem solid white;
+		margin-top: -4.3rem;
+		margin-left: -2.7rem;
+  }
+}
+
+@media (min-width: 992px) {
+	.welcome p {
+		padding-right: 4.4rem;
+	}
+}
+
+.welcome .btn {
+	background-color:#b2744e;
+	margin-top: 2.15rem;
+	border-radius: 0;
+}
+
+#float-back-img, 
+#float-front-button {
+	position: absolute;
+}
+
+#float-front-button {
+	top: 35.5%;
+	left: 30%;
+	padding: 0.5rem 1.3rem;
+}
+
+#float-back-img {
+	height: 16%;
+	top: 45%;
+	left: 44%;
+}
+
+/* FUSS section */
+
+.gray-bg {
+	background-image: linear-gradient(to top, rgba(177,177,178, 0.51), rgba(210,210,211, 0.51));
+	height: 22rem;
+	width: 83%;
+	margin: auto;
+}
+
+.fuss .text-content {
+	padding-top: 2.7rem;
+}
+
+  /* tricky solution */
+
+  .border-box {
+	position: relative;
+	width: 13.7rem;
+	height: 13.7rem;
+	border-radius: 50%;
+	margin: auto;
+	margin-top: 2.7rem;
+  }
+
+  .border-box:hover:after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	bottom: 5px;
+	left: 5px;
+	right: 5px;
+	border: 5px solid white;
+	border-radius: 50%;
+  }
+
+  /* and of tricky solution */
+
+  .fuss .btn {
+	  background-color: #33464b;
+	  border-radius: 0;
+	  margin-top: 2.7rem;
+	  margin-bottom: 3.1rem;
+	  padding: 0.5rem 1.3rem;
+  }
+
+  hr {
+    width: 200%;
+    margin-left: -50%;
+    margin-top: 0.4rem;
+    margin-bottom: 0.3rem;
+  }
+
+  /* rooms sub-segment */
+
+
+  @media (min-width: 992px) {
+    .rooms-text-box {
+      padding-left: 4.5rem;
+    }
+  }
