@@ -2,10 +2,10 @@ body {
 	color: #000000;     
 	text-align:center;
 	font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.6;
-  letter-spacing: normal;
+	font-stretch: normal;
+	font-style: normal;
+	line-height: 1.6;
+	letter-spacing: normal;
 }
 
 .bold {
@@ -21,7 +21,7 @@ body {
 }
 
 .text-style-01 { 
-	font-size: 0.625rem; /* 8px >> 10px */ 
+	font-size: 0.65rem; /* 8px >> 10px */ 
 	color: #ffffff;
 	text-align: left;
 }
@@ -70,5 +70,13 @@ body {
 
 .text-style-05 {
 	font-size: 1rem; /* 14px >> 16px*/
+}
+
+.text-style-06 {
+	font-size: 4rem;
+}
+
+.text-style-07 {
+	font-size: 1.7rem;
 }
 

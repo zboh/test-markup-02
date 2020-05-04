@@ -41,6 +41,9 @@ http://flickity.metafizzy.co
   }
   
   /* ---- previous/next buttons ---- */
+
+  /* ----------  ვცადე ამ კარუსელისთვის მიმეთითებინა, რომ eventListener-ს
+  ჩემი ღილაკებისთვის მოესმინა, მაგრამ ცოდნა არ მეყო  ------------ */
   
   .flickity-prev-next-button {
     position: absolute;
@@ -52,7 +55,7 @@ http://flickity.metafizzy.co
     background: white;
     background: hsla(0, 0%, 100%, 0.75);
     cursor: pointer;
-    /* vertically center */
+
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
@@ -152,13 +155,11 @@ http://flickity.metafizzy.co
   
   .gallery {
     background: rgb(255, 255, 255);
-    /* margin-top: -2rem;
-    z-index: -1; */
   }
   
   .gallery-cell {
     width: 37.5%;
-    height: 19rem;
+    /* height: 19rem; */
     margin-right: 2rem;
     background: #8C8;
     counter-increment: gallery-cell;

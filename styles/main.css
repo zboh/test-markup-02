@@ -119,57 +119,198 @@ img {
 	background-image: linear-gradient(to top, rgba(177,177,178, 0.51), rgba(210,210,211, 0.51));
 	height: 22rem;
 	width: 83%;
-	margin: auto;
+  margin: auto;
+  margin-bottom: -22rem;
 }
 
 .fuss .text-content {
 	padding-top: 2.7rem;
 }
 
-  /* tricky solution */
+/* tricky solution for round borders of img-s on hover*/
 
-  .border-box {
-	position: relative;
-	width: 13.7rem;
-	height: 13.7rem;
-	border-radius: 50%;
-	margin: auto;
-	margin-top: 2.7rem;
+.border-box {
+position: relative;
+width: 13.7rem;
+height: 13.7rem;
+border-radius: 50%;
+margin: auto;
+margin-top: 2.7rem;
+}
+
+.border-box:hover:after {
+content: "";
+position: absolute;
+top: 5px;
+bottom: 5px;
+left: 5px;
+right: 5px;
+border: 5px solid white;
+border-radius: 50%;
+}
+
+/* and of tricky solution */
+
+.fuss .btn {
+  background-color: #33464b;
+  border-radius: 0;
+  margin-top: 2.7rem;
+  margin-bottom: 3.1rem;
+  padding: 0.5rem 1.3rem;
+}
+
+hr {
+  width: 200%;
+  margin-left: -50%;
+  margin-top: 0.4rem;
+  margin-bottom: 0.3rem;
+}
+
+/* rooms sub-segment */
+
+
+@media (min-width: 992px) {
+  .rooms-text-box {
+    padding-left: 4.5rem;
   }
+}
 
-  .border-box:hover:after {
-	content: "";
-	position: absolute;
-	top: 5px;
-	bottom: 5px;
-	left: 5px;
-	right: 5px;
-	border: 5px solid white;
-	border-radius: 50%;
+.rooms-text-box {
+  margin-bottom: -2.7rem;
+  z-index: 1;
+}
+
+.prev-button, .next-button {
+  background-color: white;
+  outline: none;
+  border: none;
+  opacity: 0.1;
+  transition: opacity 0.2s;
+  height: 3rem;
+}
+
+.next-button:hover, .prev-button:hover{
+  opacity: 1;
+}
+
+.prev-button {
+  -webkit-transform: rotate(-180deg);
+        -ms-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+}
+
+.next-button img {
+  height: 2.5rem;
+}
+
+.prev-button img {
+  height: 2.5rem;
+}
+
+.tiny-logo {
+  width: 0.9rem;
+  margin: 0 1rem 0 1.2rem;
+}
+
+
+/* culinary */
+
+.food-img {
+  height: 32rem;
+}
+
+
+.culinary .btn {
+  background-color: #9c5773;
+  border-radius: 0;
+  margin-top: 3rem;
+  margin-bottom: 3.1rem;
+  padding: 0.5rem 1.3rem;
+}
+
+.baked-text::after {
+  content: "";
+  background-blend-mode: color, normal;
+  opacity: 0.41;
+  background-image: linear-gradient(to bottom, rgba(204, 116, 97, 0.33), rgba(204, 116, 97, 0.33)), linear-gradient(to top, #d1c5da, #dfd3e9);
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1; 
+  
+}
+
+@media (min-width: 992px){
+  .baked-text::after {
+    margin-right: 15px;
   }
+}
 
-  /* and of tricky solution */
+.selector-01 {
+  position: relative;
+  padding-top: 9rem;
+}
 
-  .fuss .btn {
-	  background-color: #33464b;
-	  border-radius: 0;
-	  margin-top: 2.7rem;
-	  margin-bottom: 3.1rem;
-	  padding: 0.5rem 1.3rem;
-  }
+#stripes {
+  position: absolute;
+  bottom: 0;
+  left: 48%;
+}
 
-  hr {
-    width: 200%;
-    margin-left: -50%;
-    margin-top: 0.4rem;
-    margin-bottom: 0.3rem;
-  }
+#stripes img {
+  height: 8rem;
+}
 
-  /* rooms sub-segment */
+/* relax */
 
+.relax .text {
+  padding-top: 6rem;
+}
 
-  @media (min-width: 992px) {
-    .rooms-text-box {
-      padding-left: 4.5rem;
-    }
-  }
+.relax  h1 {
+  padding-left: 5rem;
+  width: 70%;
+}
+
+.relax p {
+  padding-left: 5rem;
+  width: 70%;
+}
+
+.relax .photo {
+  background-image: url(../src/img/photo/shutterstock-577500481@2x.png);
+  background-repeat: no-repeat;
+  background-color:white;
+  background-size: cover;
+  max-width: 100%;
+  height: 27rem;
+  display: flex;
+  align-items: center;
+}
+
+.photo .rotated {
+  transform-origin: center;
+  transform: rotate(-90deg);
+}
+
+/* discover local */
+
+.discover {
+  background-image: url(../src/img/photo/image-beach@2x.png);
+  background-repeat: no-repeat;
+  background-color:white;
+  background-size: cover;
+  max-width: 100%;
+  height: 100%;
+}
+
+.discover p {
+  width: 40%;
+  margin: auto;
+}
+
+.discover nav {
+  padding-top: 13rem;
+}
